@@ -19,4 +19,8 @@ class BankAccount
   def deposit(amount)
     self.balance += amount
   end
+
+  def close_amount
+    destroy self
+  end
 end
