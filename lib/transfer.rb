@@ -20,11 +20,8 @@ class Transfer
       self.receiver.balance += self.amount
       self.status = "complete"
     else
-      #puts "REJECTED"
       self.status = "rejected"
-      "Transaction rejected. Please check your account balance."
-      puts "#{self.sender.name} + #{self.sender.balance} + #{self.sender.status}| #{self.receiver.name} + #{self.receiver.balance} + #{self.receiver.status}"
-      puts "REJECTED"
+      puts "Transaction rejected. Please check your account balance."
     end
   end
 
