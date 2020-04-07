@@ -21,6 +21,6 @@ class BankAccount
   end
 
   def close_amount
-    destroy self
+    destroy (self)
   end
 end
