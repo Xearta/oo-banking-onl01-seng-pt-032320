@@ -13,8 +13,10 @@ class Transfer
   end
 
   def execute_transaction
+    if valid?
       self.sender.balance -= self.amount
       self.receiver.balance += self.amount
       self.status = "complete"
+    end
   end
 end
