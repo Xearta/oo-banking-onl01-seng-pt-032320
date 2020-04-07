@@ -22,7 +22,7 @@ class Transfer
     else
       #puts "REJECTED"
       self.status = "rejected"
-      "Transaction rejected. Please check your account balance."
+      return "Transaction rejected. Please check your account balance."
     end
     #puts "#{self.sender.name} + #{self.sender.balance} + #{self.sender.status}| #{self.receiver.name} + #{self.receiver.balance} + #{self.receiver.status}"
   end
