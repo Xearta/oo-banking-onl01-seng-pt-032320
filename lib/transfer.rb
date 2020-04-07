@@ -18,11 +18,10 @@ class Transfer
     if valid? && self.status == "pending"
       self.sender.balance -= self.amount
       self.receiver.balance += self.amount
-      #self.status = "complete"
+      self.status = "complete"
     else
       self.status = "rejected"
-      puts "#{self.status} + #{self.sender.name} + #{self.receiver.name}"
-      return "Transaction rejected. Please check your account balance."
+      "Transaction rejected. Please check your account balance."
     end
   end
 
