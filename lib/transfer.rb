@@ -23,7 +23,7 @@ class Transfer
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
-    puts "#{self.sender} | #{self.receiver}"
+    puts "#{self.sender.name} + #{self.sender.balance} + #{self.sender.status}| #{self.receiver.name} + #{self.receiver.balance} + #{self.receiver.status}"
   end
 
   def reverse_transfer
