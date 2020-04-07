@@ -20,7 +20,7 @@ class BankAccount
     self.balance += amount
   end
 
-  def close_amount
+  def close_account
     destroy(self)
   end
 end
